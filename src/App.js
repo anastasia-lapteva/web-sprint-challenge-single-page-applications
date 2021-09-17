@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Link, Switch } from 'react-router-dom';
+import Home from "./Home";
 
 export default function App()
 {
@@ -12,6 +13,12 @@ export default function App()
                     <Link to="/pizza">Order</Link>
                 </div>
             </nav>
+
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+            </Switch>
         </div>
     );
 };
