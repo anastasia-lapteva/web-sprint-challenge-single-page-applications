@@ -12,7 +12,9 @@ export default function Home()
                 alt='Pizza'
             />
             <Link to="/pizza">
-                <button className='md-button order-button'>
+                <button
+                    className='md-button order-button'
+                    id='order-pizza'>
                     Order a Pizza!
                 </button>
             </Link>
