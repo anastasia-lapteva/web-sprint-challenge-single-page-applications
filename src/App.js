@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Link, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Link, Redirect } from 'react-router-dom';
 import Home from "./Home";
 import Order from "./Order";
 import Confirmation from "./Confirmation";
