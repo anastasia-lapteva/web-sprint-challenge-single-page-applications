@@ -1,11 +1,17 @@
 import React from "react";
+import { Route, Link, Switch } from 'react-router-dom';
 
-const App = () => {
-  return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
-  );
+export default function App()
+{
+    return (
+        <div className='container'>
+            <nav>
+                <h1 className='pizza-header'>Lambda Eats</h1>
+                <div className='nav-links'>
+                    <Link to="/">Home</Link>
+                    <Link to="/pizza">Order</Link>
+                </div>
+            </nav>
+        </div>
+    );
 };
-export default App;
